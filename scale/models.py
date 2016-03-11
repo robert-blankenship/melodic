@@ -35,6 +35,9 @@ def modifyPitchBy(pitch, step):
     else:
         return Pitch(pitch.tone + step, pitch.octave)
 
+def get_pitch_difference(pitch1, pitch2):
+    return (pitch2.tone + pitch2.octave*12) - (pitch1.tone + pitch1.octave*12)
+
 class Pitch:
     def __repr__(self):
         return self.to_symbol()

@@ -7,6 +7,8 @@
 # - Print out melody w/ rhythmic pattern.
 import scale.models as ScaleModels
 import rhythm.models as RhythmModels
+import player.player
+from functools import partial
 from phrase.generator import GeneratePhrase
 import argparse
 
@@ -49,7 +51,9 @@ def __main__():
     tonic = get_tonic_for_key_string(args.key)
     scale_pattern = get_scale_pattern_for_string(args.scale_pattern)
 
-    scale = ScaleModels.Scale(ScaleModels.Pitch(tonic,0), scale_pattern)
+    scale = ScaleModels.Scale(ScaleModels.Pitch(tonic,4), scale_pattern)
+
+    map(partial(player.player.play_pitch, ms=1000), scale.notes)
 
     GeneratePhrase(scale)    
 
