@@ -46,7 +46,7 @@ For now, a bar will be either composed of 6 or 8 of these durations.
 
 ## Bringing it together
 At first, the program will just output a visual representation of the melody.
-./melody-writer --scale C --mode major
+./melody-writer --key C --scale major
 a0 a1 g#0 e0 f#0 g#0 a0
 
 
