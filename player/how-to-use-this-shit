@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-# Note: need to change last line of /examples/violin.py to be 
-# write_pcm()
-#play -v 1 -t raw -c 2 -b 16 -r 44100 -e signed <(/examples/violin.py)
-
-play -v 1 -t raw -c 2 -b 16 -r 44100 -e signed <(python player.py)
-
