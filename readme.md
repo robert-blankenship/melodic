@@ -3,7 +3,6 @@
 A cute Python program for playing scales.
 
 # Examples
-
 	# Plays a C major scale
 	./melody-writer.py --key C --scale-pattern major
 
@@ -12,4 +11,8 @@ A cute Python program for playing scales.
 
 	# Plays a B major pentatonic scale
 	./melody-writer.py --key B --scale-pattern major-pentatonic
+
+# Installation
+	
+	git clone https://github.com/robert-blankenship/melodic
 
